@@ -8,6 +8,7 @@ function HomeScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Home!</Text>
+      <Text><Ionicons name="ios-information-circle-outline" size={32} /></Text>
     </View>
   );
 }
@@ -16,6 +17,7 @@ function SettingsScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Settings!</Text>
+      <Text><Ionicons name="ios-list" size={32} /></Text>
     </View>
   );
 }
@@ -24,6 +26,7 @@ function RandomScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Random!</Text>
+      <Text><Ionicons name="ios-cloud-outline" size={32} /></Text>
     </View>
   );
 }
