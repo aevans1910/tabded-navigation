@@ -20,6 +20,14 @@ function SettingsScreen() {
   );
 }
 
+function RandomScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Random!</Text>
+    </View>
+  );
+}
+
 const Tab = createBottomTabNavigator();
 
 export default function App() {
@@ -36,6 +44,8 @@ export default function App() {
                 : 'ios-information-circle-outline';
             } else if (route.name === 'Settings') {
               iconName = focused ? 'ios-list-box' : 'ios-list';
+            } else if (route.name === 'Random') {
+              iconName = focused ? 'ios-cloud-outline' : 'ios-cloud-outline-box';
             }
 
             // You can return any component that you like here!
@@ -49,6 +59,7 @@ export default function App() {
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Random" component={RandomScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
